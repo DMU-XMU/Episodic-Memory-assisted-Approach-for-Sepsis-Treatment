@@ -84,8 +84,8 @@ class Qnetwork():
         self.phase = tf.placeholder(tf.bool)
 
         self.num_actions = 25
-
-        self.alpha = 0.15
+ 
+        self.alpha = 0.3 # best
         self.input_size = len(state_features)
 
         self.state = tf.placeholder(tf.float32, shape=[None, self.input_size], name="input_state")
